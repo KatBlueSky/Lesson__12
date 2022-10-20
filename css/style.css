@@ -1,0 +1,693 @@
+/* &display=swap */
+@import "reset.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+
+body{
+
+}
+.main{}
+
+/* обмеж. контейнер */
+[class*="__container"]{
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+/* полотно */
+.content {
+}
+
+
+.content-box{
+	padding: 20px;
+	margin-bottom: 30px;
+	background-color: rgb(255, 240, 240);
+	box-shadow: 5px 5px 10px rgb(148, 148, 148);
+}
+
+.translate__text,
+.scale__text,
+.rotate__text,
+.skew__text,
+.matrix__text,
+.origin__text,
+.perspective__text,
+.translatethree__text,
+.scalethree__text,
+.rotatethree__text,
+.transformstyle__text,
+.backfacevisability__text{
+	margin-bottom: 10px;
+	color: rgb(148, 151, 151);
+}
+.translate__body{
+	width: 150px;
+	height: 150px;
+	background-color: rgb(112, 115, 121);
+	
+}
+
+.translate__element {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(45, 83, 159);
+}
+
+.translate__element:hover {
+	transform: translate(20px, 20px);
+}
+
+
+/* роботі у відсотках */
+/* transform: translate(20%, 20%); */
+
+/* scale */
+	.scale__body {
+		width: 150px;
+		height: 150px;
+		background-color: rgb(112, 115, 121);
+	}
+
+	.scale__element {
+		width: 150px;
+		height: 150px;
+		background-color: rgb(45, 83, 159);
+	}
+.scale__element:hover {
+	transform: scale(0.7);
+}
+
+/* rotate */
+	.rotate__body {
+		width: 150px;
+		height: 150px;
+		background-color: rgb(112, 115, 121);
+	}
+
+	.rotate__element {
+		width: 150px;
+		height: 150px;
+		background-color: rgb(45, 83, 159);
+	
+	}
+
+	.rotate__element:hover {
+		transform: rotate(20deg);
+	}
+
+		/* skew */
+	.skew__body {
+   width: 150px;
+	height: 150px;
+	background-color: rgb(112, 115, 121);
+	}
+		
+	.skew__element {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(45, 83, 159);
+	;
+	}
+
+	.skew__element:hover {
+	transform: skew(-20deg, -30deg);
+}
+
+	/* matrix*/
+	.matrix__body {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(112, 115, 121);
+}
+			
+.matrix__element {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(45, 83, 159);
+	}
+	
+.matrix__element:hover {
+transform: matrix(2, 1, 2, 0, 0, 2);
+}
+
+/* origin*/
+.origin__body {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(112, 115, 121);
+}
+
+.origin__element {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(45, 83, 159);
+}
+
+.origin__element:hover {
+	transform-origin: 0 0;
+	transform: rotate(10deg);
+}
+
+/* perspective
+/* perspective-origin */
+
+.perspective__body {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(112, 115, 121);
+}
+
+.perspective__body:hover{
+	perspective:200px;
+}
+
+.perspective__element {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(45, 83, 159);
+}
+.perspective__element:hover {
+	transform: rotateX(60deg);
+}
+
+/* 3dtranslate*/
+.translatethree__body {
+  width: 150px;
+	height: 150px;
+	background-color: rgb(112, 115, 121);
+}
+
+.translatethree__element {
+   width: 150px;
+	height: 150px;
+	background-color: rgb(45, 83, 159);
+}
+
+.translatethree__element:hover {
+	transform: translate3d(20px,30px, 20px);
+}
+
+/* 3D scale */
+.scalethree__body {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(112, 115, 121);
+}
+
+.scalethree__element {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(45, 83, 159);
+}
+
+.scalethree__element:hover {
+	transform: scale3d(1,2,1);
+}
+
+
+/* 3D rotate */
+.rotatethree__body {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(112, 115, 121);
+}
+.rotatethree__element {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(45, 83, 159);
+}
+
+.rotatethree__element:hover {
+	transform: rotate3d(1, 2, 1, -30deg);
+}
+
+
+/* transform-style */
+.transformstyle__body {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(112, 115, 121);
+} 
+
+.transformstyle__body{
+	perspective: 300px;
+	transform-style: flat;
+	transform-style: preserve-3d;
+}
+
+
+.transformstyle__element {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(45, 83, 159,0.7);
+}
+
+.transformstyle__element:hover {
+	transform:rotateY(50deg) ;	
+}
+
+
+/* backface-visability */
+.backfacevisability__body {
+width: 150px;
+height: 150px;
+background-color: rgb(112, 115, 121, 0.5);
+
+}
+
+.backfacevisability__element {
+width: 150px;
+height: 150px;
+background-color: rgb(45, 83, 159, 0.7);
+backface-visibility: hidden; }
+
+.backfacevisability__element:hover{
+backface-visibility: hidden;
+transform: rotateY(180deg);
+}
+
+/*  =================Блок 2 Космос==================================================*/
+.page {
+	min-width: 100%;
+	min-height: 1400px;
+	padding: 10px;
+	background-color: rgb(60, 13, 154);
+	box-shadow: 5px 5px 15px rgb(30, 24, 97);
+	z-index: -100;
+	overflow: hidden;
+
+}
+
+.space{
+	position: relative;
+}
+
+audio{
+	height: 100px;
+	width: 300px;
+	transform: rotate(90deg);
+	opacity: 0.5;
+}
+
+.space__song {
+	position: absolute;
+	top: 230px;
+	left:-50px;
+}
+
+.space__text{
+	font-family: "Pacifico", serif;
+	letter-spacing:2px;
+	line-height: 1.5;
+	font-size: 25px;
+	color: aqua;
+	position: absolute;
+	top: -200px;
+	left: 100px;
+}
+
+/* блок з хмарками */
+.cloud{}			
+
+.cloud__content {
+	position: relative;
+	top: 0px;
+	left: 150px;
+	transition: all 2s ease 0s;
+	transform: scale(0.5);
+	z-index: 2;
+}
+
+.cloud__content:hover {
+	transform: translate(0px,20px);
+}
+
+.cloud__element--one {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	background-color: aliceblue;
+}
+
+.cloud__element--two {
+	height: 100px;
+	width: 100px;
+	background-color: aliceblue;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: 100px;
+}
+
+
+.cloud__element--three {
+	height: 150px;
+	width: 150px;
+	background-color: aliceblue;
+	border-radius: 50%;
+	position: absolute;
+	top: -30px;
+	left: 150px;
+}
+
+.cloud__element--for {
+	height: 130px;
+	width: 130px;
+	background-color: aliceblue;
+	border-radius: 50%;
+	position: absolute;
+	top: -20px;
+	left: 250px;
+}
+
+.cloud__element--fife {
+	height: 80px;
+	width: 80px;
+	background-color: aliceblue;
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 350px;
+}
+
+.cloud__element--down {
+	height: 120px;
+	width: 480px;
+	background-color: aliceblue;
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 350px;
+	position: absolute;
+	top: 50px;
+	left: -50px;
+}
+
+
+.cloud__content--double {
+	position: relative;
+	top: -10px;
+	left: 700px;
+	transform: scale(0.8);
+	z-index: 2;
+}
+
+.cloud__content--double:hover {
+transition: all 2s ease 0s;
+	transform: translate(15px, -50px);
+}
+
+/* -планет------- */
+.planet {
+position: relative;
+}
+
+.planet__blue{
+position: absolute;
+top: -190px;
+left: 170px;
+width: 280px;
+height: 280px;
+}
+
+.planet__blue:hover {
+transition: all 2s ease 0s;
+transform: translate(650px, 100px) rotate(90deg);
+}
+
+
+.planet__cloud{
+width: 580px;
+height: 380px;
+position: absolute;
+top: -300px;
+left: 750px;
+transform: rotate(180deg);
+z-index: 0;
+}
+
+
+.planet__orange {
+width: 150px;
+height: 150px;
+position: absolute;
+top: 50px;
+left: 650px;
+}
+
+.planet__orange:hover {
+transform: rotate(180deg);}
+
+.planet__pink {
+width: 220px;
+height: 220px;
+position: absolute;
+top: 250px;
+left: 900px;
+}
+
+.planet__pink:hover{
+	transform: scale(1.2);
+}
+
+.planet__green {
+width: 290px;
+height: 290px;
+position: absolute;
+top: 405px;
+left: 990px;
+}
+
+.planet__green:hover{
+	transform: translate(-350px,-50px) rotate(90deg) scale(0.7);
+}
+
+.planet__yellow {
+width: 220px;
+height: 160px;
+position: absolute;
+top: 180px;
+left: 400px;
+}
+
+.planet__yellow:hover {
+	transform: rotate(350deg);
+	transition: all 5s ease 0s;
+}
+
+
+.planet__aqua{
+width: 200px;
+height: 200px;
+position: absolute;
+top: 430px;
+left: 90px;
+}
+
+.planet__aqua:hover {
+transition: all 3s ease 0s;
+transform: translate(800px, 180px) scale(1.8);
+}
+
+.planet__stars{
+width: 250px;
+height: 250px;
+position: absolute;
+top: 280px;
+left: 1200px;
+transform: translate(-1200px, 800px);
+transition: all 5s ease 0s;
+}
+
+.planet__saturn {
+	width: 380px;
+	height: 280px;
+	position: absolute;
+	top: 350px;
+	left: 430px;
+	z-index: 1;
+}
+
+.planet__saturn:hover {
+	transform: matrix3d(0.5, 0, -0.866025, 0,
+				0.595877, 1.2, -1.03209, 0,
+				0.866025, 0, 0.5, 0,
+				25.9808, 0, 15, 1);
+transform-origin: 0 0;
+transform: rotate(10deg);
+}
+
+
+.planet__galaxis{
+width: 880px;
+height: 550px;
+position: absolute;
+top: 900px;
+left: 600px;
+z-index: 1;
+}
+
+
+/* perspective */
+.wind{
+	width: 480px;
+	height: 450px;
+	position: relative;
+}
+
+.wind:hover{
+	perspective: 500px;
+}
+
+.planet__wind{
+position: absolute;
+top: 600px;
+left: -200px;
+opacity:0.8;
+z-index: 1;
+}
+
+.planet__wind:hover {
+	transform: rotateX(20deg);
+}
+
+
+
+/* ----- */
+.austonaut{
+	position: relative;
+	top: -500px;
+}
+
+.austonaut__rocket{
+width: 220px;
+height: 300px;
+position: absolute;
+top: 250px;
+left: 50px;
+}
+
+.austonaut__rocket:hover {
+	transition: all 5s ease 0s;
+	transform:translate(800px, -180px) scale(1.8);
+}
+
+.austonaut__fire{
+width: 280px;
+height: 220px;
+position: absolute;
+top: 750px;
+left: 450px;
+}
+
+
+.austonaut__fire{
+	width: 280px;
+	height: 220px;
+	position: absolute;
+	top: 820px;
+	left: 450px;
+	z-index: 3;
+}
+
+.austonaut__fire:hover{
+	transition: all 2s ease 0s;
+	transform: skew(-20deg);
+}
+
+.austonaut__star{
+width: 190px;
+height: 300px;
+position: absolute;
+top: 600px;
+left: 850px;
+z-index: 1;
+}
+.austonaut__star:hover{
+transform: translate3d(20px, 30px, 20px) scale(1.5) rotate(-10deg);
+}
+
+
+.chance img{
+	height: 300px;
+}
+
+.chanche__look {
+  width:120px; 
+  height: 300px; 
+  position: absolute;
+  left: 120px;
+  top: 600px;
+}
+
+ .chance__austronaut {position: absolute;
+	left: 120px;
+	top: 600px;
+	backface-visibility: hidden;
+}
+
+.chance__ufo {
+	position: absolute;
+	left: 120px;
+	top: 600px;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+}
+
+.chance:hover .chance__austronaut {
+	transform: rotateY(180deg);
+	transition: all 1s ease 0s;
+}
+
+.chance:hover .chance__ufo {
+	transform: rotateY(0deg);
+	transition: all 1s ease 0s;
+}
+
+/* БЛОК ЗЕМЛЯ */
+.earth{
+	position: relative;
+}
+
+.earth__soil--one {
+	width: 1240px;
+	height: 150px;
+	background-color: rgb(157, 157, 232);
+	box-shadow: inset 10px 10px 10px rgb(223, 169, 234);
+	border-radius: 804px 804px 0px 0px / 150px 150px 5px 5px;
+	position: absolute;
+	top: 550px;
+	left: 0px;
+	z-index: 1;
+}
+
+.earth__soil--one:hover {
+	box-shadow: 10px 10px 35px #ced4fa;
+	transform: scale(1.2);
+}
+
+.earth__soil--two {
+	width: 1240px;
+	height: 50px;
+	background-color: rgb(87, 47, 95);
+	box-shadow: inset 5px 5px 5px rgb(218, 148, 232);
+	border-radius: 804px 804px 0px 0px / 150px 150px 5px 5px;
+	position: absolute;
+	top: 590px;
+	left: 0px;
+	z-index: 2;
+}
+
+.earth__soil--two:hover {
+	box-shadow: 10px 10px 35px #ced4fa;
+	transform: scale(1.2);
+}
